@@ -1,0 +1,28 @@
+# Command Locations Plugin Configuration
+default_area_radius: 1
+
+groups:
+  example_group: # Example, will be created by commands
+    areas:
+      example_area:
+        world: "world"
+        x: 0
+        y: 64
+        z: 0
+    commands:
+      - "/say %player% entered the example zone!"
+    countdown: 10 # in seconds
+    price: 0.0 # Cost for command execution
+    enter_message: "&aYou have entered the %clocal_group_name% area. Countdown starting!" # %clocal_group_name%, %clocal_countdown%
+    exit_message: "&cYou have left the %clocal_group_name% area. Countdown reset."
+    countdown_type: "SMALL_TITLE" # Options: EXP_BAR, PLAIN_TEXT, BOSS_BAR, SMALL_TITLE, LARGE_TITLE
+    countdown_display_options:
+      plain_text_format: "&eCountdown: &c%clocal_time_left%s..." # For PLAIN_TEXT
+      boss_bar_title: "&6%clocal_group_name% Active: &c%clocal_time_left%s" # For BOSS_BAR
+      boss_bar_color: "BLUE" # RED, BLUE, GREEN, PINK, PURPLE, WHITE, YELLOW
+      boss_bar_style: "SOLID" # SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+      title_text: "&b%clocal_time_left%" # For SMALL_TITLE and LARGE_TITLE main text
+      subtitle_text: "&7Prepare..." # For LARGE_TITLE subtitle
+      title_fade_in: 10 # ticks
+      title_stay: 20 # ticks
+      title_fade_out: 10 # ticks

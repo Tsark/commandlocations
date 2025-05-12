@@ -1,0 +1,15 @@
+name: CommandLocation
+version: '0.0.3'
+main: com.hybridiize.commandLocation.CommandLocations
+api-version: '1.21'
+author: Hybridiize
+description: Executes commands when players stand in defined locations.
+commands:
+  clocal:
+    description: Admin commands for CommandLocations plugin.
+    usage: /clocal <subcommand> [args...]
+    aliases: [commandlocations]
+permissions:
+  commandlocations.admin:
+    description: Allows use of all /clocal commands.
+    default: op
